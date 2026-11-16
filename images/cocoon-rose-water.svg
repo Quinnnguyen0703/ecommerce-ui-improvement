@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Minh họa nước hoa hồng Cocoon</title>
+  <desc id="desc">Chai toner trong suốt màu hồng nhạt trên nền xanh nhạt.</desc>
+  <defs>
+    <linearGradient id="bottle" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#fff" stop-opacity=".96"/>
+      <stop offset=".55" stop-color="#fff5f4" stop-opacity=".78"/>
+      <stop offset="1" stop-color="#efd6d2" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="liquid" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#f3ccd0"/>
+      <stop offset="1" stop-color="#e8aeb6"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-20%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="14" flood-color="#315543" flood-opacity=".17"/>
+    </filter>
+  </defs>
+  <rect width="600" height="600" rx="32" fill="#eff7f1"/>
+  <circle cx="300" cy="286" r="205" fill="#e1f0e5"/>
+  <circle cx="300" cy="286" r="163" fill="#f8fbf8"/>
+  <ellipse cx="300" cy="505" rx="122" ry="17" fill="#306e51" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <rect x="251" y="112" width="98" height="49" rx="9" fill="#383b38"/>
+    <rect x="241" y="152" width="118" height="337" rx="25" fill="url(#bottle)" stroke="#ddc9c5" stroke-width="3"/>
+    <path d="M244 340q56-20 114 0v118q0 25-25 25h-64q-25 0-25-25z" fill="url(#liquid)" opacity=".8"/>
+    <path d="M260 180v130" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+    <text x="300" y="231" fill="#3c423d" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="2">COCOON</text>
+    <path d="M282 270c-17-14-31 6-14 19 13 10 28 20 32 25 6-9 21-19 32-29 14-14-3-31-18-17l-13 12z" fill="#d77d88" opacity=".85"/>
+    <text x="300" y="346" fill="#80555a" font-family="Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">ROSE WATER</text>
+    <text x="300" y="375" fill="#765e5e" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">NƯỚC HOA HỒNG</text>
+    <text x="300" y="416" fill="#776d69" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">LÀM DỊU &amp; CÂN BẰNG DA</text>
+    <text x="300" y="460" fill="#766d69" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">310 ml</text>
+  </g>
+  <circle cx="115" cy="160" r="6" fill="#83b695" opacity=".6"/>
+  <circle cx="482" cy="418" r="9" fill="#dd9ba2" opacity=".65"/>
+</svg>

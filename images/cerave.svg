@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Minh họa sữa rửa mặt CeraVe Foaming Cleanser</title>
+  <desc id="desc">Chai sữa rửa mặt trắng xanh trên nền xanh nhạt.</desc>
+  <defs>
+    <linearGradient id="bottle" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#e7f0f3"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-20%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="14" flood-color="#315543" flood-opacity=".17"/>
+    </filter>
+  </defs>
+  <rect width="600" height="600" rx="32" fill="#eff7f1"/>
+  <circle cx="300" cy="286" r="205" fill="#e1f0e5"/>
+  <circle cx="300" cy="286" r="163" fill="#f8fbf8"/>
+  <ellipse cx="300" cy="505" rx="122" ry="17" fill="#306e51" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <path d="M253 114h94v44l19 21v287q0 17-17 17H251q-17 0-17-17V179l19-21z" fill="url(#bottle)" stroke="#d5e0e5" stroke-width="3"/>
+    <rect x="248" y="105" width="104" height="24" rx="7" fill="#f8fbfc" stroke="#d5e0e5" stroke-width="2"/>
+    <rect x="234" y="253" width="132" height="118" fill="#2b6d9a"/>
+    <rect x="234" y="253" width="132" height="16" fill="#78a8c6"/>
+    <text x="300" y="229" fill="#26668f" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle">CeraVe</text>
+    <text x="300" y="298" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700" text-anchor="middle">FOAMING</text>
+    <text x="300" y="319" fill="#fff" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">CLEANSER</text>
+    <text x="300" y="345" fill="#e7f1f7" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">NORMAL TO OILY SKIN</text>
+    <text x="300" y="409" fill="#54646d" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">3 ESSENTIAL CERAMIDES</text>
+    <text x="300" y="446" fill="#728088" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">236 ml</text>
+    <path d="M251 179v58" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+  </g>
+  <circle cx="115" cy="160" r="6" fill="#83b695" opacity=".6"/>
+  <circle cx="482" cy="418" r="9" fill="#8db7ce" opacity=".65"/>
+</svg>
