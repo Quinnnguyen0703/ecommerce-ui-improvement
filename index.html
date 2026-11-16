@@ -3,106 +3,168 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cải tiến giao diện Thẻ sản phẩm - Hasaki UI Demo</title>
+  <meta name="theme-color" content="#306e51" />
+  <title>Flash Deals &amp; Gợi ý hôm nay | Hasaki</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- Thanh tiêu đề đơn giản -->
+  <!-- Header thương hiệu và thanh tìm kiếm -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">HASAKI<span>.VN</span> <small>| UI Improvement</small></div>
-      <div class="search-bar">
-        <input type="text" placeholder="Tìm sản phẩm, thương hiệu..." aria-label="Tìm kiếm" />
-        <button type="button">Tìm</button>
-      </div>
+      <a class="logo" href="#" aria-label="Hasaki - Trang chủ">HASAKI<span>.VN</span></a>
+      <form class="search-bar" role="search">
+        <label class="sr-only" for="site-search">Tìm sản phẩm, thương hiệu</label>
+        <input id="site-search" type="search" placeholder="Tìm sản phẩm, thương hiệu..." />
+        <button type="submit">Tìm kiếm</button>
+      </form>
     </div>
   </header>
 
-  <!-- Khu vực danh sách sản phẩm cải tiến -->
   <main class="container">
-    <section class="section-header">
-      <h1>Gợi Ý Chăm Sóc Da Nổi Bật</h1>
-      <p>Giao diện thẻ sản phẩm cải tiến: Tối ưu hiển thị giá khuyến mãi và thao tác trên di động</p>
-    </section>
-
-    <section class="product-grid">
-      <!-- Sản phẩm 1 -->
-      <article class="product-card">
-        <div class="product-badge">-28%</div>
-        <div class="product-thumb">
-          <img src="https://placehold.co/300x300/f4f7f5/2e6b4e?text=La+Roche-Posay" alt="Kem Chống Nắng La Roche-Posay" />
+    <!-- Flash Deals và các gợi ý chăm sóc da trong ngày -->
+    <section class="deals-section" aria-labelledby="deals-title">
+      <div class="section-heading">
+        <div class="section-copy">
+          <span class="eyebrow">HASAKI BEAUTY PICKS</span>
+          <h1 id="deals-title">Flash Deals <span>&amp; Gợi ý hôm nay</span></h1>
+          <p>Chăm da đúng cách, chọn sản phẩm yêu thích với giá tốt mỗi ngày.</p>
         </div>
-        <div class="product-info">
-          <span class="brand-name">LA ROCHE-POSAY</span>
-          <h2 class="product-title">Kem Chống Nắng Kiểm Soát Dầu Anthelios UVmune 400 50ml</h2>
-          <div class="product-rating">★★★★★ <span>(1.240)</span></div>
-          <div class="price-box">
-            <span class="sale-price">385.000₫</span>
-            <span class="original-price">535.000₫</span>
+        <div class="countdown" aria-label="Ưu đãi kết thúc sau 05 giờ 24 phút 18 giây">
+          <span class="countdown-label">Ưu đãi kết thúc sau</span>
+          <div class="countdown-time" aria-hidden="true">
+            <span>05</span><b>:</b><span>24</span><b>:</b><span>18</span>
           </div>
-          <button type="button" class="btn-add-cart">Thêm vào giỏ</button>
         </div>
-      </article>
+      </div>
 
-      <!-- Sản phẩm 2 -->
-      <article class="product-card">
-        <div class="product-badge">-32%</div>
-        <div class="product-thumb">
-          <img src="https://placehold.co/300x300/f4f7f5/2e6b4e?text=Bioderma+500ml" alt="Nước Tẩy Trang Bioderma" />
-        </div>
-        <div class="product-info">
-          <span class="brand-name">BIODERMA</span>
-          <h2 class="product-title">Nước Tẩy Trang Dành Cho Da Nhạy Cảm Sensibio H2O 500ml</h2>
-          <div class="product-rating">★★★★★ <span>(3.812)</span></div>
-          <div class="price-box">
-            <span class="sale-price">359.000₫</span>
-            <span class="original-price">525.000₫</span>
-          </div>
-          <button type="button" class="btn-add-cart">Thêm vào giỏ</button>
-        </div>
-      </article>
+      <div class="deal-toolbar">
+        <span class="deal-tag"><span class="live-dot"></span> ĐANG DIỄN RA</span>
+        <p>Ưu đãi chọn lọc dành riêng cho bạn</p>
+      </div>
 
-      <!-- Sản phẩm 3 -->
-      <article class="product-card">
-        <div class="product-badge">-25%</div>
-        <div class="product-thumb">
-          <img src="https://placehold.co/300x300/f4f7f5/2e6b4e?text=CeraVe+Cleanser" alt="Sữa Rửa Mặt CeraVe" />
-        </div>
-        <div class="product-info">
-          <span class="brand-name">CERAVE</span>
-          <h2 class="product-title">Sữa Rửa Mặt Sạch Sâu Cho Da Dầu Foaming Cleanser 236ml</h2>
-          <div class="product-rating">★★★★☆ <span>(985)</span></div>
-          <div class="price-box">
-            <span class="sale-price">275.000₫</span>
-            <span class="original-price">365.000₫</span>
+      <div class="product-grid">
+        <!-- Nước tẩy trang Bioderma -->
+        <article class="product-card">
+          <div class="product-visual">
+            <span class="discount-badge">-32%</span>
+            <span class="shipping-badge">Chính hãng 100%</span>
+            <div class="product-thumb">
+              <img
+                src="https://placehold.co/600x600/f2f7f3/306e51?text=BIODERMA%0ASensibio+H2O"
+                alt="Nước tẩy trang Bioderma Sensibio H2O 500ml"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
           </div>
-          <button type="button" class="btn-add-cart">Thêm vào giỏ</button>
-        </div>
-      </article>
+          <div class="product-info">
+            <span class="brand-name">BIODERMA</span>
+            <h2 class="product-title">Nước tẩy trang dành cho da nhạy cảm Sensibio H2O <span>500ml</span></h2>
+            <div class="price-box">
+              <span class="sale-price">359.000₫</span>
+              <span class="original-price">525.000₫</span>
+            </div>
+            <div class="sold-info"><span>Đã bán <b>78%</b></span><span>Gần hết</span></div>
+            <div class="progress-track" role="progressbar" aria-label="Đã bán 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+              <span style="width: 78%"></span>
+            </div>
+            <button type="button" class="btn-add-cart">Thêm vào giỏ</button>
+          </div>
+        </article>
 
-      <!-- Sản phẩm 4 -->
-      <article class="product-card">
-        <div class="product-badge">-30%</div>
-        <div class="product-thumb">
-          <img src="https://placehold.co/300x300/f4f7f5/2e6b4e?text=L'Oreal+Serum" alt="Tinh Chất L'Oreal" />
-        </div>
-        <div class="product-info">
-          <span class="brand-name">L'ORÉAL PARIS</span>
-          <h2 class="product-title">Tinh Chất Cấp Ẩm Căng Mướt Da Hyaluronic Acid 1.5% 30ml</h2>
-          <div class="product-rating">★★★★★ <span>(2.150)</span></div>
-          <div class="price-box">
-            <span class="sale-price">315.000₫</span>
-            <span class="original-price">449.000₫</span>
+        <!-- Sữa rửa mặt CeraVe -->
+        <article class="product-card">
+          <div class="product-visual">
+            <span class="discount-badge">-25%</span>
+            <span class="shipping-badge">NowFree 2H</span>
+            <div class="product-thumb">
+              <img
+                src="https://placehold.co/600x600/f2f7f3/306e51?text=CeraVe%0AFoaming+Cleanser"
+                alt="Sữa rửa mặt CeraVe Foaming Cleanser 236ml"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
           </div>
-          <button type="button" class="btn-add-cart">Thêm vào giỏ</button>
-        </div>
-      </article>
+          <div class="product-info">
+            <span class="brand-name">CERAVE</span>
+            <h2 class="product-title">Sữa rửa mặt sạch sâu cho da dầu Foaming Cleanser <span>236ml</span></h2>
+            <div class="price-box">
+              <span class="sale-price">275.000₫</span>
+              <span class="original-price">365.000₫</span>
+            </div>
+            <div class="sold-info"><span>Đã bán <b>54%</b></span><span>Ưu đãi có hạn</span></div>
+            <div class="progress-track" role="progressbar" aria-label="Đã bán 54%" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100">
+              <span style="width: 54%"></span>
+            </div>
+            <button type="button" class="btn-add-cart">Thêm vào giỏ</button>
+          </div>
+        </article>
+
+        <!-- Kem chống nắng L'Oreal Paris -->
+        <article class="product-card">
+          <div class="product-visual">
+            <span class="discount-badge">-30%</span>
+            <span class="shipping-badge">Chính hãng 100%</span>
+            <div class="product-thumb">
+              <img
+                src="https://placehold.co/600x600/f2f7f3/306e51?text=L'OREAL+PARIS%0AUv+Defender"
+                alt="Kem chống nắng L'Oreal Paris UV Defender 50ml"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="brand-name">L'ORÉAL PARIS</span>
+            <h2 class="product-title">Kem chống nắng UV Defender bảo vệ da phổ rộng <span>50ml</span></h2>
+            <div class="price-box">
+              <span class="sale-price">209.000₫</span>
+              <span class="original-price">299.000₫</span>
+            </div>
+            <div class="sold-info"><span>Đã bán <b>63%</b></span><span>Được yêu thích</span></div>
+            <div class="progress-track" role="progressbar" aria-label="Đã bán 63%" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100">
+              <span style="width: 63%"></span>
+            </div>
+            <button type="button" class="btn-add-cart">Thêm vào giỏ</button>
+          </div>
+        </article>
+
+        <!-- Nước hoa hồng Cocoon -->
+        <article class="product-card">
+          <div class="product-visual">
+            <span class="discount-badge">-20%</span>
+            <span class="shipping-badge">NowFree 2H</span>
+            <div class="product-thumb">
+              <img
+                src="https://placehold.co/600x600/f2f7f3/306e51?text=COCOON%0ARose+Water"
+                alt="Nước hoa hồng Cocoon chiết xuất hoa hồng 310ml"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="brand-name">COCOON</span>
+            <h2 class="product-title">Nước hoa hồng chiết xuất hoa hồng làm dịu da <span>310ml</span></h2>
+            <div class="price-box">
+              <span class="sale-price">165.000₫</span>
+              <span class="original-price">206.000₫</span>
+            </div>
+            <div class="sold-info"><span>Đã bán <b>41%</b></span><span>Ưu đãi trong ngày</span></div>
+            <div class="progress-track" role="progressbar" aria-label="Đã bán 41%" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">
+              <span style="width: 41%"></span>
+            </div>
+            <button type="button" class="btn-add-cart">Thêm vào giỏ</button>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>Bài tập cá nhân Chương 1 - Phát triển ứng dụng Web/TMĐT (Tham khảo giao diện Hasaki.vn)</p>
+      <p>Hasaki Beauty &amp; Clinic — Gợi ý chăm sóc da dành cho bạn.</p>
     </div>
   </footer>
 </body>
